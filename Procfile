@@ -1,1 +1,2 @@
-web: sh setup.sh && streamlit run main.py
+web: python main.py
+worker: python main.py 
