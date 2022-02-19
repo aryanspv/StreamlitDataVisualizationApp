@@ -55,11 +55,11 @@ def main():
 
             if st.checkbox("Correlation Plot(Matplotlib)"):
                 plt.matshow(df.corr())
-                st.plt()
+                st.pyplot()
 
             if st.checkbox("Correlation Plot(Seaborn)"):
                 st.write(sns.heatmap(df.corr(),annot=True))
-                st.plt()
+                st.pyplot()
 
 
             if st.checkbox("Pie Plot"):
@@ -67,7 +67,7 @@ def main():
                 column_to_plot = st.selectbox("Select 1 Column",all_columns)
                 pie_plot = df[column_to_plot].value_counts().plot.pie(autopct="%1.1f%%")
                 st.write(pie_plot)
-                st.plt()
+                st.pyplot()
 
 
 
