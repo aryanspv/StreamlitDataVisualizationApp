@@ -55,11 +55,11 @@ def main():
 
             if st.checkbox("Correlation Plot(Matplotlib)"):
                 plt.matshow(df.corr())
-                st.pyplot()
+                st.plt()
 
             if st.checkbox("Correlation Plot(Seaborn)"):
                 st.write(sns.heatmap(df.corr(),annot=True))
-                st.pyplot()
+                st.plt()
 
 
             if st.checkbox("Pie Plot"):
