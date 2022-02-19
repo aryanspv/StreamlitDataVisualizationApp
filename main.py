@@ -67,7 +67,7 @@ def main():
                 column_to_plot = st.selectbox("Select 1 Column",all_columns)
                 pie_plot = df[column_to_plot].value_counts().plot.pie(autopct="%1.1f%%")
                 st.write(pie_plot)
-                st.pyplot()
+                st.plt()
 
 
 
